@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rental Ledger — San Jose &amp; Santa Clara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F1EEE3;
+    --paper-raised: #FAF8F0;
+    --ink: #21261F;
+    --ink-soft: #5B5F52;
+    --rule: #D8D3C2;
+    --clay: #B5562F;
+    --sage: #4B6B3F;
+    --sage-bg: #E3EADB;
+    --gold: #A9821B;
+    --gold-bg: #F3ECD3;
+    --rust: #8B2E22;
+    --rust-bg: #F2DCD3;
+    --radius: 3px;
+  }
+
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    background-image:
+      linear-gradient(var(--rule) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: -1px -1px;
+    background-attachment: fixed;
+  }
+
+  a{ color: var(--clay); }
+
+  :focus-visible{
+    outline: 2px solid var(--clay);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  .wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 36px 24px 80px;
+  }
+
+  /* ---------- Header ---------- */
+  header.top{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+  }
+  .title-block h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-size: clamp(28px, 4vw, 42px);
+    margin: 0 0 2px;
+    letter-spacing: -0.01em;
+  }
+  .title-block .eyebrow{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .meta-block{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: right;
+  }
+  .meta-block strong{ color: var(--ink); font-weight: 600; }
+
+  /* ---------- Controls ---------- */
+  .controls{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-end;
+    margin-bottom: 22px;
+  }
+  .search-field{
+    flex: 1 1 280px;
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .search-field label, .sort-field label{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .search-field input{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    padding: 10px 12px;
+    border: 1.5px solid var(--ink);
+    background: var(--paper-raised);
+    color: var(--ink);
+    border-radius: var(--radius);
+  }
+  .search-field input::placeholder{ color: var(--ink-soft); }
+
+  .sort-field select{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    padding: 10px 10px;
+    border: 1.5px solid var(--ink);
+    background: var(--paper-raised);
+    color: var(--ink);
+    border-radius: var(--radius);
+  }
+
+  .chip-rows{ display:flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .chip-row{ display:flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .chip-row .row-label{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-right: 4px;
+    min-width: 88px;
+  }
+  .chip{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    background: var(--paper-raised);
+    color: var(--ink);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .chip[aria-pressed="true"]{
+    background: var(--ink);
+    color: var(--paper-raised);
+  }
+  .chip.verdict-good[aria-pressed="true"]{ background: var(--sage); border-color: var(--sage); }
+  .chip.verdict-fair[aria-pressed="true"]{ background: var(--gold); border-color: var(--gold); }
+  .chip.verdict-over[aria-pressed="true"]{ background: var(--rust); border-color: var(--rust); }
+
+  .result-count{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+
+  /* ---------- Grid & cards ---------- */
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 22px;
+  }
+
+  .card{
+    position: relative;
+    background: var(--paper-raised);
+    border: 1.5px solid var(--ink);
+    border-radius: var(--radius);
+    padding: 18px 18px 14px;
+    box-shadow: 3px 3px 0 rgba(33,38,31,0.08);
+    overflow: hidden;
+  }
+
+  .stamp{
+    position: absolute;
+    top: 14px;
+    right: -8px;
+    transform: rotate(-7deg);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 10px 4px;
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .stamp::after{
+    content: "";
+  }
+  .stamp.good{ color: var(--sage); }
+  .stamp.fair{ color: var(--gold); }
+  .stamp.over{ color: var(--rust); }
+  .stamp.unknown{ color: var(--ink-soft); font-size: 10px; }
+
+  .card h2{
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0 0 4px;
+    padding-right: 70px;
+  }
+  .card .address{
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 2px;
+  }
+  .card .neighborhood-type{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+  }
+
+  .specs{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    display: flex;
+    gap: 14px;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .specs span b{ font-weight: 600; }
+
+  hr.rule{
+    border: none;
+    border-top: 1px dashed var(--rule);
+    margin: 12px 0;
+  }
+
+  .price-row{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .price-row .asking{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .price-row .asking .unit{ font-size: 12px; font-weight: 400; color: var(--ink-soft); }
+  .price-row .fair{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    text-align: right;
+  }
+  .price-row .fair b{ color: var(--ink); font-weight: 600; }
+  .price-diff{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    margin-bottom: 10px;
+  }
+  .price-diff.good{ color: var(--sage); }
+  .price-diff.fair{ color: var(--gold); }
+  .price-diff.over{ color: var(--rust); }
+  .price-diff.unknown{ color: var(--ink-soft); }
+
+  .amenity-row{ margin-bottom: 6px; }
+  .amenity-row .tier-label{
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display:inline-block;
+    width: 64px;
+    vertical-align: top;
+  }
+  .pill-wrap{ display:inline-flex; flex-wrap: wrap; gap: 4px; width: calc(100% - 68px); }
+  .pill{
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+  .pill.basic{ background: #ECEAE0; border-color: var(--ink-soft); color: var(--ink); }
+  .pill.advanced{ background: var(--gold-bg); border-color: var(--gold); color: #6b5314; }
+  .pill.pro{ background: var(--sage-bg); border-color: var(--sage); color: var(--sage); }
+  .pill.none{ background: transparent; border-color: var(--rule); color: var(--ink-soft); font-style: italic; }
+
+  .card-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+  .card-footer a{ font-weight: 600; text-decoration: none; }
+  .card-footer a:hover{ text-decoration: underline; }
+
+  .empty-state, .loading-state, .error-state{
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--ink-soft);
+  }
+  .error-state{ color: var(--rust); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="title-block">
+        <div class="eyebrow">Field guide to a fair deal</div>
+        <h1>Rental Ledger — San Jose &amp; Santa Clara</h1>
+      </div>
+      <div class="meta-block" id="metaBlock">Loading…</div>
+    </header>
+
+    <div class="controls">
+      <div class="search-field">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="text" placeholder="property, address, or neighborhood…" autocomplete="off" />
+      </div>
+      <div class="sort-field">
+        <label for="sortSelect">Sort by</label>
+        <select id="sortSelect">
+          <option value="rent_asc">Rent — low to high</option>
+          <option value="rent_desc">Rent — high to low</option>
+          <option value="value">Best value first</option>
+          <option value="newest">Newest found</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="chip-rows">
+      <div class="chip-row" id="verdictChips">
+        <span class="row-label">Verdict</span>
+      </div>
+      <div class="chip-row" id="neighborhoodChips">
+        <span class="row-label">Neighborhood</span>
+      </div>
+    </div>
+
+    <div class="result-count" id="resultCount"></div>
+
+    <div class="grid" id="grid">
+      <div class="loading-state">Reading the ledger…</div>
+    </div>
+  </div>
+
+<script>
+const state = {
+  data: null,
+  search: "",
+  verdictFilter: new Set(),
+  neighborhoodFilter: new Set(),
+  sort: "rent_asc",
+};
+
+const VERDICT_META = {
+  "Underpriced (Good Value)": { short: "Underpriced", cls: "good" },
+  "Fair Price": { short: "Fair price", cls: "fair" },
+  "Overpriced": { short: "Overpriced", cls: "over" },
+  "Insufficient data (no size or comps)": { short: "No comps", cls: "unknown" },
+};
+
+function fmtMoney(n){
+  if (n === null || n === undefined) return "—";
+  return "$" + Math.round(n).toLocaleString("en-US");
+}
+
+function escapeHtml(s){
+  return (s || "").replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+async function loadData(){
+  try{
+    const res = await fetch("data.json", { cache: "no-store" });
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    state.data = await res.json();
+    initChips();
+    renderMeta();
+    render();
+  }catch(err){
+    document.getElementById("grid").innerHTML =
+      `<div class="error-state">Couldn't load data.json — make sure it's sitting next to this page.<br>(${escapeHtml(err.message)})</div>`;
+    document.getElementById("metaBlock").textContent = "—";
+  }
+}
+
+function renderMeta(){
+  const d = state.data;
+  const updated = new Date(d.generated_at);
+  const dateStr = isNaN(updated) ? d.generated_at : updated.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  document.getElementById("metaBlock").innerHTML =
+    `<strong>${d.total_listings}</strong> listings tracked<br>updated ${dateStr}`;
+}
+
+function initChips(){
+  const verdictRow = document.getElementById("verdictChips");
+  const order = ["Underpriced (Good Value)", "Fair Price", "Overpriced", "Insufficient data (no size or comps)"];
+  order.forEach(v => {
+    const meta = VERDICT_META[v];
+    const chip = document.createElement("button");
+    chip.className = "chip verdict-" + meta.cls;
+    chip.textContent = meta.short;
+    chip.setAttribute("aria-pressed", "false");
+    chip.addEventListener("click", () => {
+      const pressed = chip.getAttribute("aria-pressed") === "true";
+      chip.setAttribute("aria-pressed", String(!pressed));
+      if(pressed) state.verdictFilter.delete(v); else state.verdictFilter.add(v);
+      render();
+    });
+    verdictRow.appendChild(chip);
+  });
+
+  const neighborhoods = [...new Set(state.data.listings.map(l => l.neighborhood).filter(Boolean))].sort();
+  const nRow = document.getElementById("neighborhoodChips");
+  neighborhoods.forEach(n => {
+    const chip = document.createElement("button");
+    chip.className = "chip";
+    chip.textContent = n;
+    chip.setAttribute("aria-pressed", "false");
+    chip.addEventListener("click", () => {
+      const pressed = chip.getAttribute("aria-pressed") === "true";
+      chip.setAttribute("aria-pressed", String(!pressed));
+      if(pressed) state.neighborhoodFilter.delete(n); else state.neighborhoodFilter.add(n);
+      render();
+    });
+    nRow.appendChild(chip);
+  });
+}
+
+function matchesFilters(l){
+  if(state.verdictFilter.size && !state.verdictFilter.has(l.verdict)) return false;
+  if(state.neighborhoodFilter.size && !state.neighborhoodFilter.has(l.neighborhood)) return false;
+  if(state.search){
+    const hay = (l.property + " " + l.address + " " + l.neighborhood).toLowerCase();
+    if(!hay.includes(state.search.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function valueScore(l){
+  // Lower score = better deal. Listings with no fair_rent sort last.
+  if(l.fair_rent === null || l.rent === null) return Infinity;
+  return l.rent / l.fair_rent;
+}
+
+function sortListings(list){
+  const copy = [...list];
+  switch(state.sort){
+    case "rent_asc":
+      copy.sort((a,b) => (a.rent ?? Infinity) - (b.rent ?? Infinity));
+      break;
+    case "rent_desc":
+      copy.sort((a,b) => (b.rent ?? -Infinity) - (a.rent ?? -Infinity));
+      break;
+    case "value":
+      copy.sort((a,b) => valueScore(a) - valueScore(b));
+      break;
+    case "newest":
+      copy.sort((a,b) => (b.date_found || "").localeCompare(a.date_found || ""));
+      break;
+  }
+  return copy;
+}
+
+function pillGroup(label, items, cls){
+  if(!items.length){
+    return `<div class="amenity-row"><span class="tier-label">${label}</span><span class="pill-wrap"><span class="pill none">none listed</span></span></div>`;
+  }
+  const pills = items.map(a => `<span class="pill ${cls}">${escapeHtml(a)}</span>`).join("");
+  return `<div class="amenity-row"><span class="tier-label">${label}</span><span class="pill-wrap">${pills}</span></div>`;
+}
+
+function cardHtml(l){
+  const meta = VERDICT_META[l.verdict] || VERDICT_META["Insufficient data (no size or comps)"];
+  const sizeDisplay = l.size_sqft ? `${l.size_sqft} sqft` : "size n/a";
+
+  let priceDiffHtml = "";
+  if(l.fair_rent && l.rent){
+    const pct = Math.round(((l.rent - l.fair_rent) / l.fair_rent) * 100);
+    const sign = pct > 0 ? "+" : "";
+    priceDiffHtml = `<div class="price-diff ${meta.cls}">${sign}${pct}% vs. fair rent</div>`;
+  } else {
+    priceDiffHtml = `<div class="price-diff unknown">not enough comps in ${escapeHtml(l.neighborhood || "this area")} yet</div>`;
+  }
+
+  const sourceLine = l.listing_url
+    ? `<a href="${escapeHtml(l.listing_url)}" target="_blank" rel="noopener">View listing →</a>`
+    : `<span>no link available</span>`;
+
+  return `
+    <article class="card">
+      <span class="stamp ${meta.cls}">${escapeHtml(meta.short)}</span>
+      <h2>${escapeHtml(l.property || "Unnamed listing")}</h2>
+      <div class="address">${escapeHtml(l.address || "address not listed")}</div>
+      <div class="neighborhood-type">${escapeHtml(l.neighborhood || "—")} · ${escapeHtml(l.type || "—")}</div>
+      <div class="specs">
+        <span><b>${escapeHtml(String(l.beds ?? "—"))}</b> bd</span>
+        <span><b>${escapeHtml(String(l.baths ?? "—"))}</b> ba</span>
+        <span>${escapeHtml(sizeDisplay)}</span>
+      </div>
+      <hr class="rule" />
+      <div class="price-row">
+        <div class="asking">${fmtMoney(l.rent)}<span class="unit">/mo asking</span></div>
+        <div class="fair">fair rent<br><b>${fmtMoney(l.fair_rent)}</b>/mo</div>
+      </div>
+      ${priceDiffHtml}
+      <hr class="rule" />
+      ${pillGroup("Basic", l.basic_amenities, "basic")}
+      ${pillGroup("Advanced", l.advanced_amenities, "advanced")}
+      ${pillGroup("Pro", l.pro_amenities, "pro")}
+      <div class="card-footer">
+        <span>${escapeHtml(l.source || "—")} · ${escapeHtml(l.date_found || "—")}</span>
+        ${sourceLine}
+      </div>
+    </article>
+  `;
+}
+
+function render(){
+  const grid = document.getElementById("grid");
+  if(!state.data){ return; }
+  const filtered = sortListings(state.data.listings.filter(matchesFilters));
+  document.getElementById("resultCount").textContent =
+    `Showing ${filtered.length} of ${state.data.total_listings} listings`;
+
+  if(!filtered.length){
+    grid.innerHTML = `<div class="empty-state">Nothing matches that search yet — try widening a filter.</div>`;
+    return;
+  }
+  grid.innerHTML = filtered.map(cardHtml).join("");
+}
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  state.search = e.target.value;
+  render();
+});
+document.getElementById("sortSelect").addEventListener("change", (e) => {
+  state.sort = e.target.value;
+  render();
+});
+
+loadData();
+</script>
+</body>
+</html>

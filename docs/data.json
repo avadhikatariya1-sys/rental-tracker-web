@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T22:46:49+00:00",
-  "total_listings": 78,
+  "generated_at": "2026-06-25T02:26:24+00:00",
+  "total_listings": 93,
   "assumptions": {
     "advanced_premium": 0.05,
     "pro_premium": 0.1,
@@ -35,7 +35,7 @@
       "date_found": "2026-06-23",
       "notes": "Starting rent for smallest unit",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -57,7 +57,7 @@
       "date_found": "2026-06-23",
       "notes": "1BR $2190; 2BR+ $2539",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -79,7 +79,7 @@
       "date_found": "2026-06-23",
       "notes": "2BR $2775; 3BR $2650+",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -110,7 +110,7 @@
       "date_found": "2026-06-23",
       "notes": "No pets; on-site laundry only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -145,7 +145,7 @@
       "date_found": "2026-06-23",
       "notes": "1-yr lease; non-smoking",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -167,8 +167,8 @@
       "date_found": "2026-06-23",
       "notes": "Price looks like an outlier/typo - verify with agent",
       "dollar_per_sqft": 9.49,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 2085,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 2040,
       "verdict": "Overpriced"
     },
     {
@@ -189,8 +189,8 @@
       "date_found": "2026-06-23",
       "notes": "",
       "dollar_per_sqft": 3.2,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 2731,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 2672,
       "verdict": "Fair Price"
     },
     {
@@ -246,7 +246,7 @@
       "date_found": "2026-06-23",
       "notes": "Check current floor-plan pricing directly",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -351,8 +351,8 @@
       "date_found": "2026-06-23",
       "notes": "2BR $2116; income-restricted eligibility required",
       "dollar_per_sqft": 2.58,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 2305,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 2142,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -377,9 +377,9 @@
       "date_found": "2026-06-23",
       "notes": "",
       "dollar_per_sqft": 3.66,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 2043,
-      "verdict": "Fair Price"
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 1899,
+      "verdict": "Overpriced"
     },
     {
       "id": "15",
@@ -459,8 +459,8 @@
       "date_found": "2026-06-23",
       "notes": "Rent not listed - confirm with agent",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 4849,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 4505,
       "verdict": "Insufficient data (no size or comps)"
     },
     {
@@ -503,8 +503,8 @@
       "date_found": "2026-06-23",
       "notes": "",
       "dollar_per_sqft": 1.03,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 9698,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 9011,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -604,7 +604,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -626,7 +626,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -714,7 +714,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -736,7 +736,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -758,7 +758,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -802,7 +802,7 @@
       "date_found": "2026-06-23",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -846,7 +846,7 @@
       "date_found": "2026-06-23",
       "notes": "Confirm exact city with poster",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -868,8 +868,8 @@
       "date_found": "2026-06-24",
       "notes": "2BR $2158; 3BR $2380; units 517-1018 sqft",
       "dollar_per_sqft": 3.5,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 1671,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 1553,
       "verdict": "Overpriced"
     },
     {
@@ -894,8 +894,8 @@
       "date_found": "2026-06-24",
       "notes": "2BR $3099+; 3BR $3769+; 607-911 sqft; 2 weeks free move-in special",
       "dollar_per_sqft": 4.62,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 2060,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 1914,
       "verdict": "Overpriced"
     },
     {
@@ -916,7 +916,7 @@
       "date_found": "2026-06-24",
       "notes": "3BR/3BA units also available",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -946,7 +946,7 @@
       "date_found": "2026-06-24",
       "notes": "Rent not listed - confirm with property",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -999,8 +999,8 @@
       "date_found": "2026-06-24",
       "notes": "3BR 1256 sqft from $2408+; some units income-restricted; near Alum Rock Transit Center",
       "dollar_per_sqft": 3.17,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 3994,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 3908,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1026,9 +1026,9 @@
       "date_found": "2026-06-24",
       "notes": "2BR $3302+ (930 sqft)",
       "dollar_per_sqft": 4.07,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 2693,
-      "verdict": "Fair Price"
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 2635,
+      "verdict": "Overpriced"
     },
     {
       "id": "42",
@@ -1053,9 +1053,9 @@
       "date_found": "2026-06-24",
       "notes": "2BR $3316+; units 664-1338 sqft; utilities not included",
       "dollar_per_sqft": 4.07,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
-      "fair_rent": 2938,
-      "verdict": "Underpriced (Good Value)"
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 2909,
+      "verdict": "Fair Price"
     },
     {
       "id": "43",
@@ -1078,8 +1078,8 @@
       "date_found": "2026-06-24",
       "notes": "2BR up to $4669; includes 15 townhome-style units; 721-1149 sqft",
       "dollar_per_sqft": 4.92,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
-      "fair_rent": 2913,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 2884,
       "verdict": "Overpriced"
     },
     {
@@ -1103,8 +1103,8 @@
       "date_found": "2026-06-24",
       "notes": "Units range $1495-$1895; 488-605 sqft; no pets",
       "dollar_per_sqft": 3.06,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 1610,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 1575,
       "verdict": "Fair Price"
     },
     {
@@ -1125,8 +1125,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 1.85,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 6597,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 6454,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1147,7 +1147,7 @@
       "date_found": "2026-06-24",
       "notes": "No pets; utilities not included",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1169,8 +1169,8 @@
       "date_found": "2026-06-24",
       "notes": "Listed 2 days ago per Zillow",
       "dollar_per_sqft": 3.1,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 2979,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 2914,
       "verdict": "Fair Price"
     },
     {
@@ -1191,8 +1191,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 2.11,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 5927,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 5799,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1213,8 +1213,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 3.65,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 3233,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 3004,
       "verdict": "Overpriced"
     },
     {
@@ -1241,7 +1241,7 @@
       "date_found": "2026-06-24",
       "notes": "Multiple units; prices range $1875-$3000; near 680/101",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1263,8 +1263,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 2.52,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 5113,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 5002,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1293,7 +1293,7 @@
       "date_found": "2026-06-24",
       "notes": "Starting at $1900; specific unit pricing not confirmed",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1315,7 +1315,7 @@
       "date_found": "2026-06-24",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1337,7 +1337,7 @@
       "date_found": "2026-06-24",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1359,7 +1359,7 @@
       "date_found": "2026-06-24",
       "notes": "City-level location only",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1381,7 +1381,7 @@
       "date_found": "2026-06-24",
       "notes": "7-unit building built 1949",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1414,8 +1414,8 @@
       "date_found": "2026-06-24",
       "notes": "Non-smoking; vinyl wood flooring",
       "dollar_per_sqft": 3.06,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 2473,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 2420,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1438,7 +1438,7 @@
       "date_found": "2026-06-24",
       "notes": "1BR $2599+; 2BR $3639+; 1 month free on 14-month lease; pets $50/mo",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1462,7 +1462,7 @@
       "date_found": "2026-06-24",
       "notes": "Studio $2833; 1BR $3582+; 2BR $4678+; 1 month free promo",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1517,7 +1517,7 @@
       "date_found": "2026-06-24",
       "notes": "Affordable community; 151 units; Studio $1895 (promo); range $1708-$3085; 2nd month free",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1539,7 +1539,7 @@
       "date_found": "2026-06-24",
       "notes": "Studio $3570+; 1BR $3835+; 2BR $4795+",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1561,8 +1561,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 1.98,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 5166,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 5054,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1583,8 +1583,8 @@
       "date_found": "2026-06-24",
       "notes": "Listed recently",
       "dollar_per_sqft": 3.17,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
-      "fair_rent": 5094,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 5044,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1605,8 +1605,8 @@
       "date_found": "2026-06-24",
       "notes": "",
       "dollar_per_sqft": 3.23,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
-      "fair_rent": 4405,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 4362,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1627,7 +1627,7 @@
       "date_found": "2026-06-24",
       "notes": "1BR $2897+; 2BR $3472+",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1649,7 +1649,7 @@
       "date_found": "2026-06-24",
       "notes": "1BR $3395+; 2BR $4324+; parking $50-$150/mo; utilities not included",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1674,7 +1674,7 @@
       "date_found": "2026-06-24",
       "notes": "1BR $2936+; 2BR $3752+; valet trash",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1701,8 +1701,8 @@
       "date_found": "2026-06-24",
       "notes": "35-unit community; no pets; on-site laundry; built 1959",
       "dollar_per_sqft": 3.75,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 1930,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 1888,
       "verdict": "Fair Price"
     },
     {
@@ -1726,8 +1726,8 @@
       "date_found": "2026-06-24",
       "notes": "Townhome-style; shared laundry; half off first month on 12-mo lease",
       "dollar_per_sqft": 2.52,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 3447,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 3372,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1752,9 +1752,9 @@
       "date_found": "2026-06-24",
       "notes": "New construction; also has 1BR/1BA units at $2499/mo",
       "dollar_per_sqft": 3.58,
-      "neighborhood_avg_dollar_per_sqft": 3.23,
-      "fair_rent": 3883,
-      "verdict": "Fair Price"
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 3608,
+      "verdict": "Overpriced"
     },
     {
       "id": "72",
@@ -1774,8 +1774,8 @@
       "date_found": "2026-06-24",
       "notes": "Listed ~12 days ago",
       "dollar_per_sqft": 2.83,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 3958,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 3872,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1796,8 +1796,8 @@
       "date_found": "2026-06-24",
       "notes": "Listed ~5 days ago",
       "dollar_per_sqft": 2.76,
-      "neighborhood_avg_dollar_per_sqft": 3.3,
-      "fair_rent": 4479,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 4382,
       "verdict": "Underpriced (Good Value)"
     },
     {
@@ -1823,7 +1823,7 @@
       "date_found": "2026-06-24",
       "notes": "1BR $2895; 2BR $3595; 3BR $4495",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1852,7 +1852,7 @@
       "date_found": "2026-06-24",
       "notes": "On-site retail; utilities not included",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1880,7 +1880,7 @@
       "date_found": "2026-06-24",
       "notes": "No pets; no in-unit laundry; on-site laundry available",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1909,7 +1909,7 @@
       "date_found": "2026-06-24",
       "notes": "2BR from $2906+; dog deposit $500",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     },
@@ -1939,7 +1939,353 @@
       "date_found": "2026-06-24",
       "notes": "Shared workspace; club room; utilities may not be included",
       "dollar_per_sqft": null,
-      "neighborhood_avg_dollar_per_sqft": 3.85,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": null,
+      "verdict": "Insufficient data (no size or comps)"
+    },
+    {
+      "id": "79",
+      "property": "Clayburn Apartments",
+      "address": "67 N Jackson Ave, San Jose, CA 95116",
+      "neighborhood": "Alum Rock",
+      "type": "Apartment",
+      "beds": "Studio-2",
+      "baths": "",
+      "size_sqft": "400-750",
+      "rent": 1695.0,
+      "basic_amenities": [],
+      "advanced_amenities": [
+        "Pet-friendly"
+      ],
+      "pro_amenities": [
+        "Pool"
+      ],
+      "source": "Apartments.com",
+      "listing_url": "https://www.apartments.com/clayburn-apartments-san-jose-ca/q29ehpw/",
+      "date_found": "2026-06-24",
+      "notes": "1BR $1950; 2BR $2595",
+      "dollar_per_sqft": null,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": null,
+      "verdict": "Insufficient data (no size or comps)"
+    },
+    {
+      "id": "80",
+      "property": "Sojo Apartments",
+      "address": "1227-1337 Sunny Ct, San Jose, CA 95116",
+      "neighborhood": "Alum Rock",
+      "type": "Apartment",
+      "beds": "Studio-2",
+      "baths": "",
+      "size_sqft": "400-700",
+      "rent": 1595.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Apartments.com",
+      "listing_url": "https://www.apartments.com/sojo-apartments-san-jose-ca/m3mw0nl/",
+      "date_found": "2026-06-24",
+      "notes": "Studio starting at $1595; deposit $400",
+      "dollar_per_sqft": null,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": null,
+      "verdict": "Insufficient data (no size or comps)"
+    },
+    {
+      "id": "81",
+      "property": "Courtyard Plaza Apartments",
+      "address": "2950 Story Rd, San Jose, CA 95127",
+      "neighborhood": "East San Jose",
+      "type": "Apartment (income-restricted)",
+      "beds": "Studio-1",
+      "baths": "1",
+      "size_sqft": "560",
+      "rent": 1750.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Redfin/ApartmentGuide",
+      "listing_url": "https://www.redfin.com/CA/San-Jose/Courtyard-Plaza-Apartments/apartment/1793292",
+      "date_found": "2026-06-24",
+      "notes": "Income-restricted (LIHTC); no pets",
+      "dollar_per_sqft": 3.12,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 1807,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "82",
+      "property": "3483 Joanne Ave",
+      "address": "3483 Joanne Ave, San Jose, CA 95127",
+      "neighborhood": "East San Jose",
+      "type": "Single-family house",
+      "beds": "3",
+      "baths": "2",
+      "size_sqft": "1027",
+      "rent": 3600.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow/Apartments.com",
+      "listing_url": "https://www.apartments.com/3483-joanne-ave-san-jose-ca/lvsc04f/",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.51,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 3314,
+      "verdict": "Overpriced"
+    },
+    {
+      "id": "83",
+      "property": "195 S Claremont Ave",
+      "address": "195 S Claremont Ave, San Jose, CA 95127",
+      "neighborhood": "East San Jose",
+      "type": "Single-family house",
+      "beds": "2",
+      "baths": "1",
+      "size_sqft": "982",
+      "rent": 3200.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow/Apartments.com",
+      "listing_url": "https://www.apartments.com/195-s-claremont-ave-san-jose-ca/e60xznp/",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.26,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 3169,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "84",
+      "property": "14720 E Hills Dr",
+      "address": "14720 E Hills Dr, San Jose, CA 95127",
+      "neighborhood": "East San Jose",
+      "type": "Single-family house",
+      "beds": "3",
+      "baths": "2",
+      "size_sqft": "1342",
+      "rent": 4200.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow",
+      "listing_url": "",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.13,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 4331,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "85",
+      "property": "11482 Chula Vista Dr",
+      "address": "11482 Chula Vista Dr, San Jose, CA 95127",
+      "neighborhood": "East San Jose",
+      "type": "Single-family house",
+      "beds": "4",
+      "baths": "3",
+      "size_sqft": "2837",
+      "rent": 5800.0,
+      "basic_amenities": [
+        "A/C"
+      ],
+      "advanced_amenities": [],
+      "pro_amenities": [
+        "Pool",
+        "hot tub",
+        "EV charging (Tesla)"
+      ],
+      "source": "Zillow",
+      "listing_url": "https://www.zillow.com/homedetails/11482-Chula-Vista-Dr-San-Jose-CA-95127/63066293_zpid/",
+      "date_found": "2026-06-24",
+      "notes": "Yard/pool service included; 1-yr lease; 3/4 acre lot",
+      "dollar_per_sqft": 2.04,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": 10071,
+      "verdict": "Underpriced (Good Value)"
+    },
+    {
+      "id": "86",
+      "property": "718 Bonita Ave",
+      "address": "718 Bonita Ave, San Jose, CA 95116",
+      "neighborhood": "Alum Rock",
+      "type": "Apartment",
+      "beds": "2",
+      "baths": "2",
+      "size_sqft": "1010",
+      "rent": 3000.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow",
+      "listing_url": "",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 2.97,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 3034,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "87",
+      "property": "39 Jose Figueres Ave #41",
+      "address": "39 Jose Figueres Ave #41, San Jose, CA 95116",
+      "neighborhood": "Alum Rock",
+      "type": "Apartment",
+      "beds": "2",
+      "baths": "1",
+      "size_sqft": "750",
+      "rent": 2500.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow",
+      "listing_url": "",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.33,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 2253,
+      "verdict": "Overpriced"
+    },
+    {
+      "id": "88",
+      "property": "1629 Virginia Pl #1",
+      "address": "1629 Virginia Pl #1, San Jose, CA 95116",
+      "neighborhood": "Alum Rock",
+      "type": "Single-family house",
+      "beds": "1",
+      "baths": "1",
+      "size_sqft": "1269",
+      "rent": 1399.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow",
+      "listing_url": "https://www.zillow.com/homedetails/1629-Virginia-Pl-1-San-Jose-CA-95116/2078686599_zpid/",
+      "date_found": "2026-06-24",
+      "notes": "Unusually low price for size - may be affordable/income-restricted",
+      "dollar_per_sqft": 1.1,
+      "neighborhood_avg_dollar_per_sqft": 3.0,
+      "fair_rent": 3811,
+      "verdict": "Underpriced (Good Value)"
+    },
+    {
+      "id": "89",
+      "property": "2073 Kiwi Walkway",
+      "address": "2073 Kiwi Walkway, San Jose, CA 95133",
+      "neighborhood": "East San Jose",
+      "type": "Townhome",
+      "beds": "2",
+      "baths": "",
+      "size_sqft": "",
+      "rent": 3470.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Apartments.com",
+      "listing_url": "https://www.apartments.com/2073-kiwi-walkway-san-jose-ca/b89qxl9/",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": null,
+      "neighborhood_avg_dollar_per_sqft": 3.23,
+      "fair_rent": null,
+      "verdict": "Insufficient data (no size or comps)"
+    },
+    {
+      "id": "90",
+      "property": "2368 Manhattan Pl",
+      "address": "2368 Manhattan Pl, Santa Clara, CA 95051",
+      "neighborhood": "Santa Clara",
+      "type": "Single-family house",
+      "beds": "4",
+      "baths": "2",
+      "size_sqft": "1095",
+      "rent": 4095.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow/Apartments.com",
+      "listing_url": "https://www.apartments.com/2368-manhattan-pl-santa-clara-ca/fwq6jgt/",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.74,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 4172,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "91",
+      "property": "734 San Miguel Ave",
+      "address": "734 San Miguel Ave, Santa Clara, CA 95050",
+      "neighborhood": "Santa Clara",
+      "type": "Single-family house",
+      "beds": "3",
+      "baths": "2",
+      "size_sqft": "1059",
+      "rent": 3950.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow/Apartments.com",
+      "listing_url": "https://www.apartments.com/734-san-miguel-ave-santa-clara-ca/dezjb7j/",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": 3.73,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": 4035,
+      "verdict": "Fair Price"
+    },
+    {
+      "id": "92",
+      "property": "2419 South Dr",
+      "address": "2419 South Dr, Santa Clara, CA 95051",
+      "neighborhood": "Santa Clara",
+      "type": "Townhome",
+      "beds": "4",
+      "baths": "2.5",
+      "size_sqft": "",
+      "rent": 3795.0,
+      "basic_amenities": [],
+      "advanced_amenities": [
+        "In-unit washer/dryer",
+        "dishwasher",
+        "fireplace",
+        "garage parking",
+        "fenced yard"
+      ],
+      "pro_amenities": [],
+      "source": "Zillow/Apartments.com",
+      "listing_url": "https://www.apartments.com/2419-south-dr-santa-clara-ca/lhnk99g/",
+      "date_found": "2026-06-24",
+      "notes": "3BR + loft (convertible 4th BR); pets possible with approval; no smoking",
+      "dollar_per_sqft": null,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
+      "fair_rent": null,
+      "verdict": "Insufficient data (no size or comps)"
+    },
+    {
+      "id": "93",
+      "property": "1809 Silva Pl",
+      "address": "1809 Silva Pl, Santa Clara, CA 95054",
+      "neighborhood": "Santa Clara",
+      "type": "Single-family house",
+      "beds": "3",
+      "baths": "2.5",
+      "size_sqft": "",
+      "rent": 3995.0,
+      "basic_amenities": [],
+      "advanced_amenities": [],
+      "pro_amenities": [],
+      "source": "Zillow",
+      "listing_url": "",
+      "date_found": "2026-06-24",
+      "notes": "",
+      "dollar_per_sqft": null,
+      "neighborhood_avg_dollar_per_sqft": 3.81,
       "fair_rent": null,
       "verdict": "Insufficient data (no size or comps)"
     }
